@@ -29,22 +29,22 @@ function M.load()
   vim.g.terminal_color_7 = colors.fg4
   vim.g.terminal_color_15 = colors.fg4
 
-  vim.g.terminal_color_1 = colors.red
+  vim.g.terminal_color_1 = colors.light_red
   vim.g.terminal_color_9 = colors.red
 
-  vim.g.terminal_color_2 = colors.green
+  vim.g.terminal_color_2 = colors.light_green
   vim.g.terminal_color_10 = colors.green
 
-  vim.g.terminal_color_3 = colors.yellow
+  vim.g.terminal_color_3 = colors.light_yellow
   vim.g.terminal_color_11 = colors.yellow
 
-  vim.g.terminal_color_4 = colors.blue
+  vim.g.terminal_color_4 = colors.light_blue
   vim.g.terminal_color_12 = colors.blue
 
-  vim.g.terminal_color_5 = colors.magenta
+  vim.g.terminal_color_5 = colors.light_magenta
   vim.g.terminal_color_13 = colors.magenta
 
-  vim.g.terminal_color_6 = colors.cyan
+  vim.g.terminal_color_6 = colors.light_cyan
   vim.g.terminal_color_14 = colors.cyan
 
   vim.g.terminal_ansi_colors = {
