@@ -23,27 +23,48 @@ function M.load()
 		vim.api.nvim_set_hl(0, name, val)
 	end
 
-	local term_colors = {
-    colors.bg0,
-    colors.red,
-    colors.green,
-    colors.yellow,
-    colors.blue,
-    colors.purple,
-    colors.cyan,
-    colors.fg4,
-    colors.gray,
-    colors.light_red,
-    colors.light_green,
-    colors.light_yellow,
-    colors.light_blue,
-    colors.light_purple,
-    colors.light_cyan,
-    colors.fg1,
+  vim.g.terminal_color_0 = colors.bg0
+  vim.g.terminal_color_8 = colors.bg0
+
+  vim.g.terminal_color_7 = colors.fg4
+  vim.g.terminal_color_15 = colors.fg4
+
+  vim.g.terminal_color_1 = colors.red
+  vim.g.terminal_color_9 = colors.red
+
+  vim.g.terminal_color_2 = colors.green
+  vim.g.terminal_color_10 = colors.green
+
+  vim.g.terminal_color_3 = colors.yellow
+  vim.g.terminal_color_11 = colors.yellow
+
+  vim.g.terminal_color_4 = colors.blue
+  vim.g.terminal_color_12 = colors.blue
+
+  vim.g.terminal_color_5 = colors.magenta
+  vim.g.terminal_color_13 = colors.magenta
+
+  vim.g.terminal_color_6 = colors.cyan
+  vim.g.terminal_color_14 = colors.cyan
+
+  vim.g.terminal_ansi_colors = {
+    vim.g.terminal_color_0,
+    vim.g.terminal_color_1,
+    vim.g.terminal_color_2,
+    vim.g.terminal_color_3,
+    vim.g.terminal_color_4,
+    vim.g.terminal_color_5,
+    vim.g.terminal_color_6,
+    vim.g.terminal_color_7,
+    vim.g.terminal_color_8,
+    vim.g.terminal_color_9,
+    vim.g.terminal_color_10,
+    vim.g.terminal_color_11,
+    vim.g.terminal_color_12,
+    vim.g.terminal_color_13,
+    vim.g.terminal_color_14,
+    vim.g.terminal_color_15
   }
-  for index, value in ipairs(term_colors) do
-    vim.g["terminal_color_" .. index - 1] = value
-  end
 end
 
 return M
