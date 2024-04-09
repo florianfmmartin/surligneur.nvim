@@ -1,31 +1,31 @@
 <p align="center">
-  <h2 align="center">DeepWhite</h2>
+  <h2 align="center">Surligneur</h2>
 </p>
 
 ![screenshot](screenshot/screenshot1.png)
 
 ## About
 
-DeepWhite is a light colorscheme inspired by [flatwhite-syntax](https://github.com/biletskyy/flatwhite-syntax) and [elegant-emacs](https://github.com/rougier/elegant-emacs).
+Surligneur (forked from verf/deepwhite) is a light colorscheme inspired by [flatwhite-syntax](https://github.com/biletskyy/flatwhite-syntax) and [elegant-emacs](https://github.com/rougier/elegant-emacs).
 
 ## Installation
 
 ```lua
 -- for packer.nvim
 use {
-    'Verf/deepwhite.nvim',
+    'florianfmmartin/surligneur.nvim',
     config = function()
-        vim.cmd [[colorscheme deepwhite]]
+        vim.cmd [[colorscheme surligneur]]
     end,
 }
 
 -- for lazy.nvim
 {
-    'Verf/deepwhite.nvim',
+    'florianfmmartin/surligneur.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-        vim.cmd [[colorscheme deepwhite]]
+        vim.cmd [[colorscheme surligneur]]
     end,
 }
 ```
@@ -33,7 +33,7 @@ use {
 ## Configuration
 
 ```lua
-require('deepwhite').setup({
+require('surligneur').setup({
     -- If you have some anti-blue light setting (f.lux, light bulb, or low blue light mode monitor),
     -- turn it on, this will set the background color to a cooler color to prevent the background from being too warm.
     low_blue_light = true
@@ -41,7 +41,7 @@ require('deepwhite').setup({
 -- for lualine
 require('lualine').setup({
         options = {
-            theme = 'deepwhite',
+            theme = 'surligneur',
         },
     })
 -- for barbar

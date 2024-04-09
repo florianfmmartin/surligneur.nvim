@@ -1,4 +1,4 @@
-package.loaded["deepwhite"] = nil
-package.loaded["deepwhite.colors"] = nil
-package.loaded["deepwhite.scheme"] = nil
-require("deepwhite").load()
+package.loaded["surligneur"] = nil
+package.loaded["surligneur.colors"] = nil
+package.loaded["surligneur.scheme"] = nil
+require("surligneur").load()

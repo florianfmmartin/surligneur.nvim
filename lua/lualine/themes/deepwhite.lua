@@ -1,5 +1,5 @@
-local config = require("deepwhite.config")
-local colors = require("deepwhite.colors").get_colors(config.options)
+local config = require("surligneur.config")
+local colors = require("surligneur.colors").get_colors(config.options)
 
 --[[--Why do we have to do this?--
   You might think we could do the following:

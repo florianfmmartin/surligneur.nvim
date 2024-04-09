@@ -1,4 +1,4 @@
-local config = require("deepwhite.config")
+local config = require("surligneur.config")
 local M = {}
 
 function M.setup(opts)
@@ -7,17 +7,17 @@ end
 
 function M.load()
 	if vim.version().minor < 7 then
-		vim.notify_once("deepwhite.nvim: you must use neovim 0.7 or higher")
+		vim.notify_once("surligneur.nvim: you must use neovim 0.7 or higher")
 		return
 	end
 	vim.cmd([[hi clear]])
 
-	vim.g.colors_name = "deepwhite"
+	vim.g.colors_name = "surligneur"
 	vim.o.background = "light"
 	vim.o.termguicolors = true
 
-	local colors = require("deepwhite.colors").get_colors(config.options)
-	local groups = require("deepwhite.scheme").get_groups(colors)
+	local colors = require("surligneur.colors").get_colors(config.options)
+	local groups = require("surligneur.scheme").get_groups(colors)
 
 	for name, val in pairs(groups) do
 		vim.api.nvim_set_hl(0, name, val)
