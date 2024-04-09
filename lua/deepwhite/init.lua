@@ -22,6 +22,28 @@ function M.load()
 	for name, val in pairs(groups) do
 		vim.api.nvim_set_hl(0, name, val)
 	end
+
+	local term_colors = {
+      colors.bg0,
+      colors.red,
+      colors.green,
+      colors.yellow,
+      colors.blue,
+      colors.purple,
+      colors.cyan,
+      colors.fg4,
+      colors.gray,
+      colors.light_red,
+      colors.light_green,
+      colors.light_yellow,
+      colors.light_blue,
+      colors.light_purple,
+      colors.light_cyan,
+      colors.fg1,
+    }
+    for index, value in ipairs(term_colors) do
+      vim.g["terminal_color_" .. index - 1] = value
+    end
 end
 
 return M
