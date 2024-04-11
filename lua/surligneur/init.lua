@@ -30,13 +30,13 @@ function M.load()
   vim.g.terminal_color_15 = colors.base7
 
   vim.g.terminal_color_1 = colors.red
-  vim.g.terminal_color_9 = colors.pink
+  vim.g.terminal_color_9 = colors.light_pink
 
   vim.g.terminal_color_2 = colors.green
   vim.g.terminal_color_10 = colors.light_green
 
-  vim.g.terminal_color_3 = colors.yellow
-  vim.g.terminal_color_11 = colors.orange
+  vim.g.terminal_color_3 = colors.orange
+  vim.g.terminal_color_11 = colors.light_orange
 
   vim.g.terminal_color_4 = colors.blue
   vim.g.terminal_color_12 = colors.light_blue
